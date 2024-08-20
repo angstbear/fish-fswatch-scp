@@ -5,7 +5,7 @@ function fswatch_scp --argument watch_dir target
       echo "  watch-dir: path to a local directory to watch"
       echo "  target:    an scp target specification, e.g."
       echo "             user@host.domain:/var/tmp"
-      exit 1
+      return 1
     end
 
     echo "watching: $watch_dir"
